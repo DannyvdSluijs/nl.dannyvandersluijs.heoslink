@@ -1,2 +1,2 @@
 # nl.dannyvandersluijs.heoslink
-A Homey app foro Homey to control your HEOS Link device
+A Homey app for Homey to control your HEOS Link device
