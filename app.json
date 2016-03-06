@@ -1,0 +1,49 @@
+{
+    "id": "nl.dannyvandersluijs.heoslink",
+    "name": {
+        "en": "HEOS Link"
+    },
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Danny van der Sluijs",
+        "email": "danny.vandersluijs@icloud.com"
+    },
+    "category": "appliances",
+    "description": {
+        "en": "HEOS Link for Homey",
+        "nl": "HEOS Link voor Homey"
+    },
+    "dependencies": {
+        "net": "*",
+        "node-ssdp": "*"
+    },
+    "drivers": [
+        {
+            "id": "heoslink",
+            "name": {
+                "en": "HEOS Link",
+                "nl": "HEOS Link"
+            },
+            "images": {
+                "large": "assets/drivers/heoslink/large.jpg",
+                "small": "assets/drivers/heoslink/small.jpg"
+            },
+            "class": "other",
+            "capabilities": [ "play" ],
+            "pair": [
+                {
+                    "id": "list_heoloinks",
+                    "template": "list_devices",
+                    "navigation": {
+                        "next": "add_heoslink"
+                    }
+                },
+                {
+                    "id": "add_heoslink",
+                    "template": "add_devices"
+                }
+            ]
+        }
+    ]
+}
